@@ -18,6 +18,7 @@
 		8821751028E4511F0008C347 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821750F28E4511F0008C347 /* NewPlaceViewController.swift */; };
 		88DEAEB128EB21DF006D9660 /* StorangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DEAEB028EB21DF006D9660 /* StorangeManager.swift */; };
 		88DEAEB328EB3BB9006D9660 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 88DEAEB228EB3BB9006D9660 /* .gitignore */; };
+		88DEAEB528EDD037006D9660 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DEAEB428EDD037006D9660 /* RatingControl.swift */; };
 		BE9BF06DA427311F662E771D /* Pods_My_Places.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFB7F8DECE533ECB0D154D57 /* Pods_My_Places.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		8821750F28E4511F0008C347 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		88DEAEB028EB21DF006D9660 /* StorangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorangeManager.swift; sourceTree = "<group>"; };
 		88DEAEB228EB3BB9006D9660 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		88DEAEB428EDD037006D9660 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		EFB7F8DECE533ECB0D154D57 /* Pods_My_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDDEA83EB7996B79E514AAF /* Pods-My Places.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Places.release.xcconfig"; path = "Target Support Files/Pods-My Places/Pods-My Places.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				882174F728E31D600008C347 /* SceneDelegate.swift */,
 				8821750928E31F8F0008C347 /* MainViewController.swift */,
 				8821750B28E367830008C347 /* CustomTableViewCell.swift */,
+				88DEAEB428EDD037006D9660 /* RatingControl.swift */,
 				8821750F28E4511F0008C347 /* NewPlaceViewController.swift */,
 				8821750D28E377940008C347 /* PlaceModal.swift */,
 				88DEAEB028EB21DF006D9660 /* StorangeManager.swift */,
@@ -226,6 +229,7 @@
 				8821751028E4511F0008C347 /* NewPlaceViewController.swift in Sources */,
 				882174F628E31D600008C347 /* AppDelegate.swift in Sources */,
 				8821750C28E367830008C347 /* CustomTableViewCell.swift in Sources */,
+				88DEAEB528EDD037006D9660 /* RatingControl.swift in Sources */,
 				882174F828E31D600008C347 /* SceneDelegate.swift in Sources */,
 				88DEAEB128EB21DF006D9660 /* StorangeManager.swift in Sources */,
 				8821750E28E377940008C347 /* PlaceModal.swift in Sources */,

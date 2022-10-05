@@ -10,7 +10,7 @@ import PhotosUI
 
 class NewPlaceViewController: UITableViewController {
     
-    var currentPlace: Place?
+    var currentPlace: Place!
     var imageIsChanged = false
   
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -18,13 +18,14 @@ class NewPlaceViewController: UITableViewController {
     @IBOutlet weak var placeName: UITextField!
     @IBOutlet weak var placeLocation: UITextField!
     @IBOutlet weak var placeType: UITextField!
+    @IBOutlet weak var ratingControl: RatingControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         
-        tableView.tableFooterView = UIView()
+        tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 1))
         saveButton.isEnabled = false
         //наблюдатель за полем placeName
         placeName.addTarget(self, action: #selector(textFieldChange), for: .editingChanged)
@@ -77,7 +78,11 @@ class NewPlaceViewController: UITableViewController {
             image = UIImage(named: "imagePlaceholder")
         }
         let imageData = image?.jpegData(compressionQuality: 0.5)//преобразование и сжатие файла
-        let newPlace = Place(name: placeName.text!, location: placeLocation.text, type: placeType.text, imageData: imageData)
+        let newPlace = Place(name: placeName.text!,
+                             location: placeLocation.text,
+                             type: placeType.text,
+                             imageData: imageData,
+                             rating: Double(ratingControl.rating))
         
         if currentPlace != nil{
             try! realm.write{
@@ -85,6 +90,7 @@ class NewPlaceViewController: UITableViewController {
                 currentPlace?.location = newPlace.location
                 currentPlace?.type = newPlace.type
                 currentPlace?.imageData = newPlace.imageData
+                currentPlace?.rating = newPlace.rating
             }
         }else {
             StorageManager.saveObject(newPlace)
@@ -105,6 +111,7 @@ class NewPlaceViewController: UITableViewController {
             placeType.text = currentPlace?.type
             placeImage.image = imageData
             placeImage.contentMode = .scaleAspectFill
+            ratingControl.rating = Int(currentPlace.rating)
             
         }
     }
