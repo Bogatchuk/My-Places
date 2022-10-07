@@ -17,6 +17,7 @@
 		8821750E28E377940008C347 /* PlaceModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821750D28E377940008C347 /* PlaceModal.swift */; };
 		8821751028E4511F0008C347 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821750F28E4511F0008C347 /* NewPlaceViewController.swift */; };
 		8896E2FB28EE1F7200A49C28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8896E2FA28EE1F7200A49C28 /* MapViewController.swift */; };
+		88A2B88028F05697004FFB46 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2B87F28F05697004FFB46 /* MapManager.swift */; };
 		88DEAEB128EB21DF006D9660 /* StorangeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DEAEB028EB21DF006D9660 /* StorangeManager.swift */; };
 		88DEAEB328EB3BB9006D9660 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 88DEAEB228EB3BB9006D9660 /* .gitignore */; };
 		88DEAEB528EDD037006D9660 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DEAEB428EDD037006D9660 /* RatingControl.swift */; };
@@ -37,6 +38,7 @@
 		8821750D28E377940008C347 /* PlaceModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModal.swift; sourceTree = "<group>"; };
 		8821750F28E4511F0008C347 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		8896E2FA28EE1F7200A49C28 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		88A2B87F28F05697004FFB46 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		88DEAEB028EB21DF006D9660 /* StorangeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorangeManager.swift; sourceTree = "<group>"; };
 		88DEAEB228EB3BB9006D9660 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		88DEAEB428EDD037006D9660 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
@@ -86,21 +88,62 @@
 		882174F428E31D600008C347 /* My Places */ = {
 			isa = PBXGroup;
 			children = (
-				882174F528E31D600008C347 /* AppDelegate.swift */,
-				882174F728E31D600008C347 /* SceneDelegate.swift */,
+				88A2B88128F0623D004FFB46 /* ViewControllers */,
+				88A2B88328F06270004FFB46 /* Helpers */,
+				88A2B88228F0625D004FFB46 /* Models */,
+				88A2B88528F062B4004FFB46 /* Support Files */,
+				88A2B88628F062D7004FFB46 /* IBuilder */,
+			);
+			path = "My Places";
+			sourceTree = "<group>";
+		};
+		88A2B88128F0623D004FFB46 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				8821750928E31F8F0008C347 /* MainViewController.swift */,
 				8821750F28E4511F0008C347 /* NewPlaceViewController.swift */,
 				8896E2FA28EE1F7200A49C28 /* MapViewController.swift */,
 				8821750B28E367830008C347 /* CustomTableViewCell.swift */,
-				88DEAEB428EDD037006D9660 /* RatingControl.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		88A2B88228F0625D004FFB46 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				8821750D28E377940008C347 /* PlaceModal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88A2B88328F06270004FFB46 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				88DEAEB428EDD037006D9660 /* RatingControl.swift */,
+				88A2B87F28F05697004FFB46 /* MapManager.swift */,
 				88DEAEB028EB21DF006D9660 /* StorangeManager.swift */,
-				882174FB28E31D600008C347 /* Main.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		88A2B88528F062B4004FFB46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				882174F528E31D600008C347 /* AppDelegate.swift */,
+				882174F728E31D600008C347 /* SceneDelegate.swift */,
 				882174FE28E31D620008C347 /* Assets.xcassets */,
-				8821750028E31D620008C347 /* LaunchScreen.storyboard */,
 				8821750328E31D620008C347 /* Info.plist */,
 			);
-			path = "My Places";
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		88A2B88628F062D7004FFB46 /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				882174FB28E31D600008C347 /* Main.storyboard */,
+				8821750028E31D620008C347 /* LaunchScreen.storyboard */,
+			);
+			path = IBuilder;
 			sourceTree = "<group>";
 		};
 		FC768E7A579EDCF53072EAA7 /* Pods */ = {
@@ -234,6 +277,7 @@
 				8821750C28E367830008C347 /* CustomTableViewCell.swift in Sources */,
 				8896E2FB28EE1F7200A49C28 /* MapViewController.swift in Sources */,
 				88DEAEB528EDD037006D9660 /* RatingControl.swift in Sources */,
+				88A2B88028F05697004FFB46 /* MapManager.swift in Sources */,
 				882174F828E31D600008C347 /* SceneDelegate.swift in Sources */,
 				88DEAEB128EB21DF006D9660 /* StorangeManager.swift in Sources */,
 				8821750E28E377940008C347 /* PlaceModal.swift in Sources */,
@@ -382,11 +426,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2GLR26RLC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Places/Info.plist";
+				INFOPLIST_FILE = "My Places/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -412,11 +457,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_USE_OPTIMIZATION_PROFILE = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = J2GLR26RLC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "My Places/Info.plist";
+				INFOPLIST_FILE = "My Places/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
